@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – Shekhovtsov Maksym</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ecf0f1, #ffffff);
+            color: #2c3e50;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 100px 20px;
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+            animation: fadeIn 1.3s ease;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        p.hero-desc {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            opacity: 0.85;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #2c3e50;
+            color: #fff;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .btn:hover {
+            background: #1b2733;
+            transform: translateY(-3px);
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 50px;
+            animation: fadeIn 1.2s;
+        }
+
+        /* Projects Grid */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            animation: fadeUp 1.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #dfe6e9;
+        }
+
+        .card-body {
+            padding: 18px;
+        }
+
+        /* About */
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            animation: fadeIn 1.3s;
+        }
+
+        .about-img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            background: #bdc3c7;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        /* Contact */
+        .contact-links {
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        .contact-links a {
+            display: block;
+            color: #2c3e50;
+            margin: 8px 0;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .contact-links a:hover {
+            transform: translateX(5px);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header>
+        <h1>Hello, I’m <span style="color:#1b2733;">Shekhovtsov Maksym</span></h1>
+        <p class="hero-desc">Graphic Designer specializing in modern branding, clean visuals, and meaningful design.</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250" alt="Project 1" />
+                <div class="card-body">
+                    <h3>Brand Identity</h3>
+                    <p>Clean, minimal and modern branding design tailored for companies.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250" alt="Project 2" />
+                <div class="card-body">
+                    <h3>Product Packaging</h3>
+                    <p>Creative package concepts with a strong visual message.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250" alt="Project 3" />
+                <div class="card-body">
+                    <h3>Poster & Print</h3>
+                    <p>Eye-catching posters with balanced composition and colors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-img" style="background-image:url('https://via.placeholder.com/260');"></div>
+            <div class="about-text">
+                <p>Я — початківець в OSINT та програмуванні, активно вивчаю кібербезпеку через платформи TryHackMe та HackTheBox. Розвиваюся у напрямку аналізу інформації, етичного хакінгу та створення сучасних цифрових рішень.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:maxshekhovtsov@gmail.com">maxshekhovtsov@gmail.com</a>
+            <a href="#">Instagram</a>
+            <a href="#">Behance</a>
+            <a href="#">Dribbble</a>
+        </div>
+    </section>
+</body>
+</html>
